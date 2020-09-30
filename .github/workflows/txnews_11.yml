@@ -4,7 +4,7 @@
 #   branches: 
 #   - master 
 
-name: txnews_exile
+name: txnews_11
 
 on:
   workflow_dispatch:
@@ -30,9 +30,9 @@ jobs:
         run: |
           node Task/txnews.js
         env:
-          TXNEWS_SIGN: ${{ secrets.TXNEWS_SIGN_EXILE }}
-          TXNEWS_COOKIE: ${{ secrets.TXNEWS_COOKIE_EXILE }}
-          TXNEWS_VIDEO: ${{ secrets.TXNEWS_VIDEO_EXILE }}
+          TXNEWS_SIGN: ${{ secrets.TXNEWS_SIGN_11 }}
+          TXNEWS_COOKIE: ${{ secrets.TXNEWS_COOKIE_11 }}
+          TXNEWS_VIDEO: ${{ secrets.TXNEWS_VIDEO_11 }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TXNEWS_NOTIFY_CONTROL: ${{ secrets.TXNEWS_NOTIFY_CONTROL }}
